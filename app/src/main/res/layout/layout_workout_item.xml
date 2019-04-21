@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/parentLayoutWorkoutItem">
+
+    <TextView
+        android:id="@+id/exerciseNameWI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="25dp"
+        android:text="Exercise name"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberOfSets"
+        android:layout_below="@id/exerciseNameWI"
+        android:text="Sets"
+        android:paddingRight="8dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberOfRepsOrTime"
+        android:layout_below="@id/exerciseNameWI"
+        android:layout_toRightOf="@id/numberOfSets"
+        android:text="Number of reps/Time"
+        android:paddingRight="8dp"
+        android:textSize="18dp"/>
+
+
+</RelativeLayout>
